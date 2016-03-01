@@ -197,28 +197,32 @@
 								</tr>
 					 		</tbody>
 						</table>
-						<div class="table-responsive">
 
-						<table class="table table-striped table-condensed">
-						 	<thead>
-								<tr>
-									 <th>Цвет футболок</th>
-									 <th>Цыет гетр</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td><input type="text" input-lg value="белый" required
-										name="shirt_color" placeholder="Цвет футболок"></td>
-									<td><input type="text" input-lg value="белый" required  maxlength="15"
-										name="gaiters_color" placeholder="Цвет гетр"></td>
-								</tr>
-					 		</tbody>
-						 </table>
+<!-- Цвета футболок - список из заявки -->
+						<datalist id="shirt">
+							<option>Белый</option>
+							<option>Синий</option>
+						</datalist>
+
+<!-- Цвета гетр - список из заявки -->
+						<datalist id="gaiters">
+							<option>Оранжевый</option>
+							<option>Чёрный</option>
+						</datalist>
+
+						<div>
+							<input list="shirt" input-lg required
+							name="shirt_color" placeholder="Цвет футболок">
 						</div>
+						<p></p>
+						<div>
+							<input list="gaiters" input-lg required  maxlength="15"
+							name="gaiters_color" placeholder="Цвет гетр">
 						</div>
 						<div class="modal-body">Нажмите сохранить после измемения номеров</div>
+
 <!-- Кнопка "Сохранить" должна обрабатывать required элементы -->
+
 					<div class="modal-footer"><button type="submit" class="btn btn-success btn-lg btn-block" data-toggle="modal" 
 						data-target="#ch_no_and_save"><i class="glyphicon glyphicon-floppy-disk"></i>Сохранить</button></div>
 					</div>
