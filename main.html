@@ -11,58 +11,58 @@
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-responsive.css" rel="stylesheet">
 	</head>
 	<body background="http://mipt.nagradion.ru/default_img/Background09.jpg">
-
-		<div class="col-md-12">
-			<div class="navbar-header">
-<!-- Вставить лого федерации мини -->
-				<a href="#" class="navbar-brand"><img src="https://www.awicons.com/free-icons/download/application-icons/pixelophilia-icons-by-omercetin/png/32/soccer-ball.png"></a>
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
-					<i class="glyphicon glyphicon-th-list"></i>
-				</button>
-			</div>
-
-			<div class="collapse navbar-collapse" id="navbar-collapse1">
-				<ul class="nav navbar-nav navbar-right">
-<!-- Продумать с поиском -->
-					<li>
-						<input class="form-control" id="search" placeholder="Поиск">
-					</li>
-					<li>
-						<a href="#">Новости ФФ</a>
-					</li>
-					<li>
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-bell"></i></a>
-						<ul class="dropdown-menu">
-							<li><a href="#"><span class="badge pull-right">40</span>КДК</a></li>
-							<li><a href="#"><span class="badge pull-right">2</span>Обновления</a></li>
-							<li><a href="#"><span class="badge pull-right">0</span>Медиа</a></li>
-							<li><a href="#"><span class="label label-info pull-right">1</span>Стадионы</a></li>
-							<li><a href="#"><span class="badge pull-right">13</span>Заявки</a></li>
-						</ul>
-					</li>
-<!-- Сделать ссылку на ПРАВУЮ КОЛОНКУ для маленьких экранов -->
-					<li>
-						<a href="#" class="visible-xs">Правая колонка</a>
-					</li>
-<!-- Сделать ссылку на МЕДИА колонку для маленьких экранов -->
-					<li>
-						<a href="#" class="visible-xs">Медиа</a>
-					</li>
-					<li>
-						<a href="#"><i class="glyphicon glyphicon-user"></i> Войти</a>
-					</li>
-				</ul>
-			</div>
-		</div>
 		<div class="container">
-			<div class="row match_lent" id="site_block_7707">
+		    <nav class="navbar navbar-default navbar-fixed-top">
+		      <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+			    <span class="sr-only">Toggle navigation</span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">Название Федерации</a>
+			</div>
+		     
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+			  <ul class="nav navbar-nav">
+			    <li class="active">
+			      <a href="#">Главная<span class="sr-only">(current)</span></a>
+			    </li>
+			    <li>
+			      <a href="#">Соревнования</a>
+			    </li>
+			    <li>
+			      <a href="#">Документы</a>
+			    </li>
+			    <li class="dropdown">
+			      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Футбол в МО<span class="caret"></span></a>
+			      <ul class="dropdown-menu" role="menu">
+				<li><a href="#">Карта футбола</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Медиа</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Статьи</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Подпункт 1</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Подпункт 2</a></li>
+			      </ul>
+			    </li>
+			  </ul>
+			</div>
+		      </div>
+		    </nav>
+		</div>
+<br></br>
+		<div class="container">
+			<div class="row match_lent">
 				<div class="col-sm-12">
 					<h2>Здесь будет лента матчей</h2>
 				</div>
 			</div>
 <!-- Центральный блок -->
 			<div class="row row-centered news">
-				<div class="col-sm-1"></div>
 <!-- Новостная колонка -->
 				<div class="col-sm-7">
 					<h1>Новостной блог</h1>
@@ -72,7 +72,8 @@
 								<td>
 									<div>
 										<a href="#">
-										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="30" height="30" hspace="1" vspace="1">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive hidden-xs" align="left" width="70" height="70" hspace="1" vspace="2">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive visible-xs" align="left" width="30" height="30" hspace="1" vspace="2">
 										</a>
 									</div>
 									<a href="#">Текст новости 1</a>
@@ -84,7 +85,8 @@
 								<td>
 									<div>
 										<a href="#">
-										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="30" height="30" hspace="1" vspace="1">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive hidden-xs" align="left" width="70" height="70" hspace="1" vspace="2">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive visible-xs" align="left" width="30" height="30" hspace="1" vspace="2">
 										</a>
 									</div>
 									<a href="#">Текст новости 2</a>
@@ -98,7 +100,8 @@
 								<td>
 									<div>
 										<a href="#">
-										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="30" height="30" hspace="1" vspace="1">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive hidden-xs" align="left" width="70" height="70" hspace="1" vspace="2">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive visible-xs" align="left" width="30" height="30" hspace="1" vspace="2">
 										</a>
 									</div>
 									<a href="#">Текст новости 3</a>
@@ -110,7 +113,8 @@
 								<td>
 									<div>
 										<a href="#">
-										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="30" height="30" hspace="1" vspace="1">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive hidden-xs" align="left" width="70" height="70" hspace="1" vspace="2">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive visible-xs" align="left" width="30" height="30" hspace="1" vspace="2">
 										</a>
 									</div>
 									<a href="#">Текст новости 4</a>
@@ -124,7 +128,8 @@
 								<td>
 									<div>
 										<a href="#">
-										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="30" height="30" hspace="1" vspace="1">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive hidden-xs" align="left" width="70" height="70" hspace="1" vspace="2">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive visible-xs" align="left" width="30" height="30" hspace="1" vspace="2">
 										</a>
 									</div>
 									<a href="#">Текст новости 5</a>
@@ -136,7 +141,8 @@
 								<td>
 									<div>
 										<a href="#">
-										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="30" height="30" hspace="1" vspace="1">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive hidden-xs" align="left" width="70" height="70" hspace="1" vspace="2">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive visible-xs" align="left" width="30" height="30" hspace="1" vspace="2">
 										</a>
 									</div>
 									<a href="#">Текст новости 6</a>
@@ -150,7 +156,8 @@
 								<td>
 									<div>
 										<a href="#">
-										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="30" height="30" hspace="1" vspace="1">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive hidden-xs" align="left" width="70" height="70" hspace="1" vspace="2">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive visible-xs" align="left" width="30" height="30" hspace="1" vspace="2">
 										</a>
 									</div>
 									<a href="#">Текст новости 7</a>
@@ -162,7 +169,8 @@
 								<td>
 									<div>
 										<a href="#">
-										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="30" height="30" hspace="1" vspace="1">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive hidden-xs" align="left" width="70" height="70" hspace="1" vspace="2">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive visible-xs" align="left" width="30" height="30" hspace="1" vspace="2">
 										</a>
 									</div>
 									<a href="#">Текст новости 8</a>
@@ -176,7 +184,8 @@
 								<td>
 									<div>
 										<a href="#">
-										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="30" height="30" hspace="1" vspace="1">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive hidden-xs" align="left" width="70" height="70" hspace="1" vspace="2">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive visible-xs" align="left" width="30" height="30" hspace="1" vspace="2">
 										</a>
 									</div>
 									<a href="#">Текст новости 9</a>
@@ -188,7 +197,8 @@
 								<td>
 									<div>
 										<a href="#">
-										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="30" height="30" hspace="1" vspace="1">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive hidden-xs" align="left" width="70" height="70" hspace="1" vspace="2">
+										<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive visible-xs" align="left" width="30" height="30" hspace="1" vspace="2">
 										</a>
 									</div>
 									<a href="#">Текст новости 10</a>
@@ -198,10 +208,13 @@
 									</div>
 								</td>
 							</tr>
+							<tr>
+								<th colspan="2"><small><a href="#">Все новости...</a></small></th>
+							</tr>
 						</tbody>
 					</table>
 				</div>
-				<div class="col-sm-3 hidden-xs"><h2>Правая колонка</h2>
+				<div class="col-sm-5 col-xs-12"><h2>Правая колонка</h2>
 
 <!-- Таблица, подправленная для отображения на любых экранах -->
 	<table class="tournamentTable table table-striped table-bordered">
