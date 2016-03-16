@@ -65,11 +65,16 @@
 <!-- Центральный блок -->
 			<div class="row row-centered news">
 <!-- Новостная колонка -->
-				<div class="col-sm-12">
-					<h1>Новостной блог</h1>
-				</div>
 <!-- Первая колонка -->
-				<div class="col-sm-4 col-xs-12" style="background: white;">
+			<div class="col-sm-8 col-xs-12">
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Главные</a></li>
+					<li><a href="#cometitions" aria-controls="cometitions" role="tab" data-toggle="tab">Соревнования</a></li>
+					<li><a href="#all" aria-controls="all" role="tab" data-toggle="tab">Все</a></li>
+				</ul>
+<!--  -->
+			<div role="tabpanel" class="tab-pane active" id="home">
+				<div class="col-sm-6 col-xs-12" style="background: white;">
 					<div>
 						<a href="#">
 						<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="70" height="70" hspace="1" vspace="2">
@@ -156,7 +161,7 @@
 					</div>
 				</div>
 <!-- Вторая колонка -->
-				<div class="col-sm-4 col-xs-12" style="background: white;">
+				<div class="col-sm-6 col-xs-12" style="background: white;">
 					<div>
 						<a href="#">
 						<img src="http://img.nagradion.ru/images/logos/logo401521689.png" alt="img" class="img-rounded img-responsive" align="left" width="70" height="70" hspace="1" vspace="2">
@@ -241,9 +246,14 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		<div role="tabpanel" class="tab-pane" id="competitions"></div>
+		<div role="tabpanel" class="tab-pane" id="all"></div>
+		</div>
 
-				<div class="col-sm-4 col-xs-12"><h2>Правая колонка</h2>
-
+<!-- Правая колонка -->
+				<div class="col-sm-4 col-xs-12"><h2 class="hidden-sm">Правая колонка</h2>
+								<h3 class="visible-sm">Правая колонка</h3>
 <!-- Таблица, подправленная для отображения на любых экранах -->
 	<table class="tournamentTable table table-striped table-bordered">
 		<thead bgcolor="white">
@@ -331,10 +341,6 @@
 	</table>
 
 				</div>
-
-
-				<div class="col-sm-1"></div>
-
 
 			</div>
 			<div class="row media hidden-xs">
